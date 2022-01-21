@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Mirali Tiryaki - Blog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mirali Tiryaki - Kişisel Web Sitesi">
+    <meta name="keywords" content="Arduino, ESP 32, ESP 8266, C++">
+    <meta name="author" content="Mirali Tiryaki">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #000000;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .margin {
+            margin-bottom: 45px;
+        }
+        
+        .bg-1 {
+            background-color: #3399CC;
+            color: #000000;
+        }
+        
+        .bg-2 {
+            background-color: #474e5d;
+            color: #C0C0C0;
+        }
+        
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+        
+        .bg-4 {
+            background-color: #4C3173;
+            color: #fff;
+        }
+        
+        .bg-5 {
+            background-color: #ecebe8;
+            /* Gray */
+            color: #000000	;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #4C3173 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mirali Tiryaki</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#kimdir">Hakkımda</a></li>
+                    <li><a href="#neyapar">Alanım </a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div id="kimdir" class="container-fluid bg-1 text-center">
+        <h3 class="margin">Merhaba, Ben Mirali!</h3>
+        <h3>The Arduino Programmer </h3>
+    </div>
+
+    <!-- Second Container -->
+    <div id="neyapar" class="container-fluid bg-2 text-center">
+        <h3 class="margin">İlgi Alanım </h3>
+        <p>Esp 8266-ESP 32 ve Arduino programlama ile Akıllı Ev Sistemleri, İnsansız Tarım Teknolojileri, Sensör ile Veri Okuma ve İşleme Yani Kısacası IOT  Teknolojileriyle Uğraşırım.Çalışmalarımı C++ Yazılım Dili ile Geliştiririm. </p>
+
+        </a>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div id="blog" class="container-fluid bg-3 text-center">
+        <h3 class="margin">Blog</h3>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Arduino , proje geliştirme süreçlerinde kullanılan, Düşük Maliyetli Bir Geliştirme kartıdır..</p>
+
+            </div>
+            <div class="col-sm-4">
+                <p>ESP 8266 - ESP 32, Arduino IDE üzerinden programlanabilen Wifi teknolojisine sahip bir geliştirme Kartıdır.</p>
+
+            </div>
+            <div class="col-sm-4">
+                <p>C++ bir programlama dilidir. Çoğu alanda kullanılır. </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="iletisim" class="container-fluid bg-5 text-center">
+        <h3 class="margin">İletişim</h3>
+        <br>
+        <div class="row ">
+            <div class="col-sm-5 text-left">
+
+                <p><span class="fa fa-instagram"></span> mirali_tiryaki_</p>
+
+
+                <p><span class="glyphicon glyphicon-envelope"></span> miralitiryaki6@gmail.com</p>
+            </div>
+            <div class="col-sm-7 ">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="İsim" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Mesaj" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+    </footer>
+
+</body>
+
+</html>
